@@ -1,9 +1,4 @@
-// import { createInterface } from "readline";
-import { commandExit } from "./command_exit.js";
-import { commandHelp } from "./command_help.js";
-import { getCommands } from "./command.js";
 import { State } from "./state.js";
-import { PokeAPI } from "./pokeapi.js";
 
 export function cleanInput(input: string): string[] {
   return input

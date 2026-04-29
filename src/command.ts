@@ -21,7 +21,7 @@ export function getCommands(): Record<string, CLICommand>{
       description: "Displays the next 20 location areas of Pokemon world",
       callback: commandMap,
     },
-    mapBack: {
+    mapb: {
       name: "mapb",
       description: "Displays the previous 20 location areas of Pokemon world",
       callback: commandMapBack,
