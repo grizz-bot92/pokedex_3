@@ -3,6 +3,7 @@ import { commandExit } from "./command_exit.js";
 import { commandHelp } from "./command_help.js";
 import { getCommands } from "./command.js";
 import { State } from "./state.js";
+import { PokeAPI } from "./pokeapi.js";
 
 export function cleanInput(input: string): string[] {
   return input
@@ -12,7 +13,7 @@ export function cleanInput(input: string): string[] {
     .filter((word) => word !== "");
 };
 
-export function startREPL(state: State){
+export async function startREPL(state: State){
   state.readline.prompt();
   
   state.readline.on("line", async (input) => {
