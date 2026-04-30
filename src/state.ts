@@ -27,7 +27,7 @@ export function initState(): State {
   return {
     readline: rl,
     commands: getCommands(),
-    pokeapi: new PokeAPI(),
+    pokeapi: new PokeAPI(0.001),
     nextLocationsURL: null,
     prevLocationsURL: null,
   }
