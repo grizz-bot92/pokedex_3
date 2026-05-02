@@ -30,7 +30,7 @@ export async function startREPL(state: State){
     }
 
     try{
-      cmd.callback(state);
+      cmd.callback(state, ...words.slice(1));
     } catch(e) {
       console.log(e);
     }
